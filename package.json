@@ -1,6 +1,8 @@
 {
-  "name": "project",
+  "name": "van-life",
+  "homepage": "https://itosan2.github.io/van-life",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "miragejs": "^0.1.46",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -12,6 +14,8 @@
     "vite": "latest"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "vite",
     "dev": "vite",
     "build": "vite build",

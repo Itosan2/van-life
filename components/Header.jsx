@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header>
-      <Link className="site-logo" to="/">
+      <Link className="site-logo" to="/van-life">
         #VanLife
       </Link>
       <nav>

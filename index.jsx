@@ -35,8 +35,9 @@ import "./server";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/van-life" element={<Layout />}>
       <Route index element={<Home />} />
+      <Route path="home" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route
         path="login"
@@ -98,7 +99,7 @@ const router = createBrowserRouter(
           />
         </Route>
       </Route>
-      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={<Home />} />
     </Route>
   )
 );

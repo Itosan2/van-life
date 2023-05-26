@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {
+  createHashRouter,
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
@@ -33,11 +34,11 @@ import { requireAuth } from "./utils";
 
 import "./server";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       {/* <Route path="van-life" element={<Layout />} /> */}
-      <Route path="/van-life" element={<Home />} />
+      {/* <Route path="/van-life" element={<Home />} /> */}
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route
